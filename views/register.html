@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bienvenidos a MercadoLiebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header class='main-header'>
+                     <div class="main-header-top-bar">
+                             <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" class="logo">
+
+                             <div class="form" action="#" method="GET">
+
+                                <div class="input">
+                                    <input type="text" name='name' class="control" placeholder="Buscar productos, marcas y más">  
+                                    <div class="submit">
+                                    <i class="fa fa-search"></i></div> 
+                             </div> </div> 
+
+                             <h2 class="copy-header">
+                                 <i class="fas fa-hand-holding-usd"></i>
+                                 Comprá en cuotas y sin tarjeta de crédito
+                        </h2>
+                                 
+                     </div>
+                     <a href="#" class="burger-menu"><i class="fa fa-bars burger"></i>
+                     </a>
+
+                            
+                                      
+                          <nav class="main-navbar">
+                            <ul class="left-navbar">
+                                <li><a href="/">Ofertas</a></li>
+                                <li><a href="#">Tiendas Oficiales</a></li>
+                                <li><a href="/sale">Vender</a></li>
+                                <li><a href="#">Ayuda</a></li>
+                            </ul>
+                            <ul class="right-navbar">
+                                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                                
+                               
+                            </ul>
+                         </nav>
+        </header>           
+                                  
+       
+                                   
+        <!--Formulario-->
+        <form action="/register" method="GET" class="create-form">  <!--POST informacion sensible o segura, GET es para formulario de busqueda-->
+            <div class="control-formulario">
+                <input type="text" name='name' class="control" placeholder="Nombre y apellido">  
+            </div>
+            <div class="control-formulario">
+                <input type="text" name='user' class="control" placeholder="Nombre de usuario">  
+            </div>
+
+            <div class="control-formulario">
+                <input type="text" name='email' class="control" placeholder="E-mail">  
+            </div>
+
+            <div class="fecha_nacimiento"><label>Fecha de nacimiento:</label></div> 
+            <div class="control-formulario">  
+                <input type="date" name='birth_date' class="control"> 
+            </div>      
+           
+           <div class="control-formulario">
+            <input type="text" name='address' class="control" placeholder="Domicilio">
+            <!--l<textarea name="" id="" cols="100"  rows="" placeholder=" Domicilio"></textarea> -->  <!--las rows puede casusar problema con el fix por eso reduje el numero-->
+       </div>
+
+       <div class="perfil_usuario"><label>Perfil de usuario</label></div>
+            <div class="profile1">
+                <input type="radio" id='comprador' name='profile' value="comprador" checked>
+                <label for="comprador">Comprador</label>
+                <input type="radio" id='Vendedor' name='profile' value="vendedor">
+                <label for="vendedor">Vendedor</label>
+            </div>    
+
+        <div class="intereses"><label>Intereses</label></div>
+        <div class="profile2"> 
+            <label for="electro"><input type="checkbox" id='electro' name='electro' value="Electro">Electrodómesticos</label>
+            <label for="hogar"><input type="checkbox" id='hogar' name='hogar' value="hogar">Hogar</label> 
+            <label for="moda"><input type="checkbox" id='moda' name='moda' value="moda"> Moda</label>
+            <label for="jugueteria"><input type="checkbox" id='jugueteria' name='jugueteria' value="jugueteria">Juguetería</label>
+            <label for="vida_sana"><input type="checkbox" id="vida_sana" name="vida_sana" value="vida_sana">Vida Sana</label>              
+        </div>        
+
+<div class="control-formulario">
+   <label>Foto usuario:</label>
+   <input type="image" name="user_picture" class="control"> <!--type=number (catalogo de # recomendable para moviles) placeholder es p/ejemplo al user --> 
+</div>
+
+<div class="control-formulario">
+   <label>Contraseña:</label>
+   <input type="password" name="password" class="control" placeholder="Contraseña"> <!--type=number (catalogo de # recomendable para moviles) placeholder es p/ejemplo al user --> 
+</div>
+<div class="control-formulario">
+   <label>Confirmar contraseña:</label>
+   <input type="password" name="password_confirmation" class="control" placeholder="Confirmar contraseña" > <!--type=number (catalogo de # recomendable para moviles) placeholder es p/ejemplo al user --> 
+</div>
+
+<div class="control-formulario">
+<button type="submit" class="button_form">Enviar</button>
+<button type="reset" class="button_form">Borrar</button>
+</div>
+
+</form>
+</body>
+</html>

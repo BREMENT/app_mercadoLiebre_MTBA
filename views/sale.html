@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bienvenidos a MercadoLiebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header class='main-header'>
+                     <div class="main-header-top-bar">
+                             <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" class="logo">
+
+                             <div class="form" action="#" method="GET">
+
+                                <div class="input">
+                                    <input type="text" name='name' class="control" placeholder="Buscar productos, marcas y más">  
+                                    <div class="submit">
+                                    <i class="fa fa-search"></i></div> 
+                             </div> </div> 
+
+                             <h2 class="copy-header">
+                                 <i class="fas fa-hand-holding-usd"></i>
+                                 Comprá en cuotas y sin tarjeta de crédito
+                        </h2>
+                                 
+                     </div>
+                     <a href="#" class="burger-menu"><i class="fa fa-bars burger"></i>
+                     </a>
+
+                            
+                                      
+                          <nav class="main-navbar">
+                            <ul class="left-navbar">
+                                <li><a href="/">Ofertas</a></li>
+                                <li><a href="#">Tiendas Oficiales</a></li>
+                                <li><a href="/sale">Vender</a></li>
+                                <li><a href="#">Ayuda</a></li>
+                            </ul>
+                            <ul class="right-navbar">
+                                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                                
+                               
+                            </ul>
+                         </nav>
+        </header>              
+       
+                                   
+        <!--Formulario-->
+        <form action="/sale" method="POST" class="create-form">  <!--POST informacion sensible o segura, GET es para formulario de busqueda-->
+            <div class="control-formulario">
+                <label>Nombre del producto:</label>
+                <input type="text" name='nombre' class="control">  <!--Atributo name permite que el backend pueda identificar cada campo para almacenar la inf. -->
+            </div>
+            <div class="control-formulario">
+                <label>Precio:</label>
+                <input type="text" name="precio" placeholder="123.56" class="control"> <!--type=number (catalogo de # recomendable para moviles) placeholder es p/ejemplo al user --> 
+            </div>
+
+            <div class="control-formulario">
+                <label>Categoría:</label>
+                <select name="categoria" class="control"><!--Sin la tilde, select es un catalogo, no permite la incersion de informacion al usuario-->
+                    <option value="hogar">Option</option> <!--Tip: Usar los mismos nombres el que el usuario ve y el del value -->
+                    <option value="electro">Electro</option> <!--El value se envia a backend lo que esta dentro de las etiq. option es lo que ve el user-->
+                    <option value="indumentaria  ">Indumentaria</option>
+                </select> 
+            </div>       
+            
+            <div class="control-formulario">
+                <label>Ciudad</label>
+                <select name="ciudad" class="control">
+                    <option value="ba">Buenos Aires</option>
+                    <option value="ro">Rosario</option>
+                    <option value="me">Mendoza</option>
+                </select>
+            </div>
+            <div class="control-formulario">
+                <label>Descripción:</label>
+                <textarea name="descripcion" class="control"></textarea>
+            </div> 
+            <div class="control-formulario">
+                <label>Está en oferta:</label>
+                <input type="radio" name="oferta">
+            </div>
+            <div class="control-formulario">
+            <button type="submit" class="button_form">Guardar</button>
+            <button type="reset" class="button_form">Borrar</button>
+            </div>
+        </form>
+
+        <article class="product">
+            <img src="/images/iphone11.jpg" alt="">
+            <h2>Iphone 11</h2>
+        </article>
+
+        <article class="product">
+            <img src="/images/iphone12.jpg" alt="">
+            <h2>Iphone 12</h2>
+        </article>
+
+        <article class="product">
+            <img src="/images/iphone12promax.jpg" alt="">
+            <h2>Iphone 12 Pro Max</h2>
+        </article>
+    
+    </body>
